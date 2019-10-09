@@ -2,7 +2,7 @@ public abstract class Employee {
 	
     private static int countID; //static , so ti can accumulate the number of  employees
 
-	
+	public int successfulCheckins;
     public String userName;
     public int employeeID;
     public double baseSalary,bonus,bonusBudget;
@@ -22,6 +22,7 @@ public abstract class Employee {
         this.baseSalary=baseSalary;
         countID++;
         this.employeeID=countID;
+        successfulCheckins=0;
     }
 
     public double getBaseSalary(){
@@ -68,5 +69,8 @@ public abstract class Employee {
    /* public void getBonus(){
 
     }*/
+    
+    
+
 
 }
