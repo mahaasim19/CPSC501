@@ -1,8 +1,7 @@
 public abstract class Employee {
 	
-    private static int countID; //static , so ti can accumulate the number of  employees
+    private static int countID; //static , so to can accumulate the number of  employees
 
-	public int successfulCheckins;
     public String userName;
     public int employeeID;
     public double baseSalary,bonus,bonusBudget;
@@ -22,7 +21,6 @@ public abstract class Employee {
         this.baseSalary=baseSalary;
         countID++;
         this.employeeID=countID;
-        successfulCheckins=0;
     }
 
     public double getBaseSalary(){
@@ -40,6 +38,7 @@ public abstract class Employee {
         // The first ever employee should have an ID of "1", the second "2" and so on
         return this.employeeID;
     }
+
 
     public Employee getManager(){
         return employeeManager;//Should return a reference to the Employee object that represents this employee's manager
