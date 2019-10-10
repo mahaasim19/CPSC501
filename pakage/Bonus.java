@@ -30,7 +30,7 @@ public class Bonus extends BusinessLead{
         for (int i=0;i<directReport.size();i++){
 			
             if((directReport.get(i).getTeamSupported()).equals(e.employeeManager)) {
-				if(directReport.get(i).canApproveBonus(bonus)){
+		if(directReport.get(i).canApproveBonus(bonus)){
                 e.bonus += bonus;
                 directReport.get(i).bonusBudget -= bonus;
                 return true;
