@@ -28,15 +28,11 @@ public class Accountant extends BusinessEmployee {
         // For example, if the TechnicalLead supports 2 SoftwareEngineers, each with a salary of 75000, the Accountant's budget should be 150000 + 15000 for a total of 165000
         this.teamSupported=lead;
         
-       /* for (int i=0; i<lead.team.size(); i++){
-            this.bonusBudget+=lead.team.get(i).getBaseSalary()*1.1;
-        }*/
-        
         i = 0;
         while(i < lead.team.size()){
-			this.bonusBudget += lead.team.get(i).getBaseSalary()*1.1;
-			i++;
-		}
+	     this.bonusBudget += lead.team.get(i).getBaseSalary()*1.1;
+	     i++;
+	}
     }
 
     public boolean canApproveBonus(double bonus){
