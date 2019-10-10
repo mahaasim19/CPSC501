@@ -1,4 +1,5 @@
 package pakage;
+
 public abstract class Employee {
 	
     private static int countID; //static , so to can accumulate the number of  employees
