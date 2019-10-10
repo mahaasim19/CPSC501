@@ -89,5 +89,4 @@ public class TechnicalLead extends TechnicalEmployee implements TeamStatus{
 			}
 			return teamStatus;
 		}
-
 }
