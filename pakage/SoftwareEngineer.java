@@ -1,5 +1,6 @@
 package pakage;
 
+
 public class SoftwareEngineer extends TechnicalEmployee{
     public boolean changesInCodeAccess;
 
