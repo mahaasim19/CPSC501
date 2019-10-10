@@ -1,5 +1,8 @@
 package pakage;
 
+// this class is a new class as its extending BusinessLead class. moved the method from businessLead to Bonus class to make it more clear as whats the function 
+//of these two methods. this class is with some new changes as needed.
+
 public class Bonus extends BusinessLead{
 
 	public Bonus(String name){
