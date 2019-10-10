@@ -1,6 +1,7 @@
 package pakage;
 import java.util.ArrayList;
 
+// removed all unnessary codes and add abstrct methods
 public abstract class BusinessLead extends BusinessEmployee implements TeamStatus{
 	
     public ArrayList<Accountant> directReport;
